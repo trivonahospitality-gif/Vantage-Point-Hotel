@@ -115,15 +115,20 @@ if (topBtn) {
     });
 }
 
-window.onload = function () {
-
+window.addEventListener("load", function () {
     const loader = document.getElementById("loader");
 
     if (loader) {
-        loader.style.display = "none";
-    }
+        setTimeout(() => {
+            loader.style.opacity = "0";
 
-};
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 500);
+
+        }, 1500);
+    }
+});
 // Navbar Scroll Effect
 
 const header = document.querySelector("header");
