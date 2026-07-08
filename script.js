@@ -1,3 +1,4 @@
+alert("JS Loaded");
 console.log("Website Loaded Successfully");
 const slides = document.querySelectorAll(".slide");
 
